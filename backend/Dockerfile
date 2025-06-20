@@ -6,11 +6,11 @@ COPY pom.xml /app/
 
 COPY src /app/src
 
-ARG DB_USER
-ARG DB_PASS
+ARG DB_USERNAME
+ARG DB_PASSWORD
 
-ENV DB_USER=${DB_USER}
-ENV DB_PASS=${DB_PASS}
+ENV DB_USERNAME=${DB_USER}
+ENV DB_PASSWORD=${DB_PASS}
 
 RUN apt-get update && apt-get install -y maven
 RUN mvn clean install -U
