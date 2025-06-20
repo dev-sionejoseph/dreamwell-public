@@ -9,8 +9,8 @@ COPY src /app/src
 ARG DB_USERNAME
 ARG DB_PASSWORD
 
-ENV DB_USERNAME=${DB_USER}
-ENV DB_PASSWORD=${DB_PASS}
+ENV DB_USERNAME=${DB_USERNAME}
+ENV DB_PASSWORD=${DB_PASSWORD}
 
 RUN apt-get update && apt-get install -y maven
 RUN mvn clean install -U
