@@ -9,7 +9,7 @@ export default function AddDream() {
   const [description, setDescription] = useState("");
   const [dreamDate, setDreamDate] = useState("");
 
-  const userId = "6d46d592-e27d-4245-8771-0c7bba3cc925";
+  const userId = "568a6de8-2b5d-44da-81d3-0e02bbe43fa6";
   const navigate = useNavigate();
   const apiUrl = import.meta.env.VITE_API_URL;
 
