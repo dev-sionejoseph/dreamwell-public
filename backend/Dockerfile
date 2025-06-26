@@ -11,9 +11,10 @@ ARG DB_PASSWORD
 
 ENV DB_USERNAME=${DB_USERNAME}
 ENV DB_PASSWORD=${DB_PASSWORD}
+ENV DB_URL=${DB_URL}
 
 RUN apt-get update && apt-get install -y maven
-RUN mvn clean install -U
+RUN mvn clean install -DskipTests
 
 EXPOSE 8080
 
