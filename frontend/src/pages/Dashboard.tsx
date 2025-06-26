@@ -10,7 +10,7 @@ interface Dream {
 export default function Dashboard() {
     const [dreams, setDreams] = useState<Dream[]>([]);
     const apiUrl = import.meta.env.VITE_API_URL;
-    const userId = "6d46d592-e27d-4245-8771-0c7bba3cc925";
+    const userId = "568a6de8-2b5d-44da-81d3-0e02bbe43fa6";
 
     useEffect(()=> {
         const fetchDreams = async () => {
